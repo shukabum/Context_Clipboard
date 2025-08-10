@@ -86,5 +86,5 @@ sqlite> .tables
 sqlite> SELECT * FROM clipboard;
 ```
 
-#📜 License
+# 📜 License
 MIT License © 2025 Shukabum
