@@ -1,0 +1,8 @@
+build/
+*.vscode/
+*.db
+
+*.c
+third_party/*.h
+
+data/
