@@ -8,4 +8,5 @@ class Search{
         const string &keyword,
         const string &typeFilter = "",
         const string &afterDate = "");
+    static void searchAllDB(const string &dbPath);
 };
