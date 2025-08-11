@@ -17,17 +17,32 @@ It runs a background listener that captures any text copied to the clipboard, cl
 ---
 
 ## 📦 Folder Structure
+```plaintext
 ContextClipboard/
-├── build/ # Build directory (created after compilation)
-├── data/ # Contains clipboard.db
-├── include/ # Header files
-├── src/ # Source files
-├── third_party/ # sqlite3 source
+├── build/                # Build directory (created after compilation)
+├── data/                 # Contains clipboard.db
+├── include/              # Header files
+│   ├── Classifier.h
+│   ├── ClipBoardListener.h
+│   ├── Database.h
+│   ├── Search.h
+│   ├── Utils.h
+│   └── ...
+├── src/                  # Source files
+│   ├── main.cpp
+│   ├── clipsearch_main.cpp
+│   ├── Classifier.cpp
+│   ├── ClipBoardListener.cpp
+│   ├── Database.cpp
+│   ├── Search.cpp
+│   ├── Utils.cpp
+│   └── ...
+├── third_party/          # Third-party libraries
+│   ├── sqlite3.c
+│   └── sqlite3.h
 ├── CMakeLists.txt
 └── README.md
-
-
----
+```
 
 ## ⚙️ Building
 
@@ -86,5 +101,5 @@ sqlite> .tables
 sqlite> SELECT * FROM clipboard;
 ```
 
-#📜 License
+# 📜 License
 MIT License © 2025 Shukabum
